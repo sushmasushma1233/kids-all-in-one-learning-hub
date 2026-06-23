@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids All-in-One Learning Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🌈 Kids Learning Hub</div>
+    <a href="#add-video" class="nav-btn">Add Video</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Safe • Fun • Learning</span>
+      <h1>All Kids Learning Videos in One Place</h1>
+      <p>
+        Organize YouTube learning videos by age, category, and interest.
+        Perfect for rhymes, ABCs, numbers, stories, science, drawing, and more.
+      </p>
+      <div class="hero-actions">
+        <a href="#videos" class="primary-btn">Start Watching</a>
+        <a href="#add-video" class="secondary-btn">How to Add Videos</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="floating-card card1">🎵 Rhymes</div>
+      <div class="floating-card card2">🔤 ABC</div>
+      <div class="floating-card card3">🔢 Numbers</div>
+      <div class="floating-card card4">📚 Stories</div>
+      <div class="floating-card card5">🧠 Science</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats">
+      <div><h3 id="totalVideos">0</h3><p>Total Videos</p></div>
+      <div><h3>8+</h3><p>Categories</p></div>
+      <div><h3>3</h3><p>Age Groups</p></div>
+      <div><h3>100%</h3><p>YouTube Embed</p></div>
+    </section>
+
+    <section class="category-strip">
+      <button class="chip active" data-category="all">🌟 All</button>
+      <button class="chip" data-category="Rhymes">🎵 Rhymes</button>
+      <button class="chip" data-category="Letters">🔤 Letters</button>
+      <button class="chip" data-category="Numbers">🔢 Numbers</button>
+      <button class="chip" data-category="Stories">📚 Stories</button>
+      <button class="chip" data-category="Science">🧪 Science</button>
+      <button class="chip" data-category="Drawing">🎨 Drawing</button>
+      <button class="chip" data-category="Good Habits">🌱 Good Habits</button>
+      <button class="chip" data-category="General Knowledge">🌍 GK</button>
+    </section>
+
+    <section id="videos" class="video-section">
+      <div class="section-title">
+        <h2>Explore Learning Videos</h2>
+        <p>Search and filter videos by age, category, and audience.</p>
+      </div>
+
+      <div class="filters">
+        <input id="searchInput" type="text" placeholder="Search rhymes, ABC, numbers, stories..." />
+        <select id="ageFilter">
+          <option value="all">All Ages</option>
+          <option value="2-4">Ages 2-4</option>
+          <option value="5-7">Ages 5-7</option>
+          <option value="8-10">Ages 8-10</option>
+        </select>
+        <select id="audienceFilter">
+          <option value="all">All Kids</option>
+          <option value="Boys">Boys</option>
+          <option value="Girls">Girls</option>
+          <option value="Both">Both</option>
+        </select>
+      </div>
+
+      <div id="videoGrid" class="video-grid"></div>
+    </section>
+
+    <section id="add-video" class="add-video">
+      <div class="section-title">
+        <h2>How to Add New YouTube Videos</h2>
+        <p>Keep adding unlimited YouTube links by updating one simple file: <b>videos.js</b></p>
+      </div>
+
+      <div class="steps">
+        <div class="step-card">
+          <span>1</span>
+          <h3>Copy YouTube Link</h3>
+          <p>Example: https://youtu.be/mbPNkDEN3Ps</p>
+        </div>
+        <div class="step-card">
+          <span>2</span>
+          <h3>Take Video ID</h3>
+          <p>For this link, video ID is <b>mbPNkDEN3Ps</b></p>
+        </div>
+        <div class="step-card">
+          <span>3</span>
+          <h3>Add in videos.js</h3>
+          <p>Paste the ID, title, age, category, and description.</p>
+        </div>
+      </div>
+
+      <pre class="code-box"><code>{
+  title: "Kids Learning Video",
+  youtubeId: "mbPNkDEN3Ps",
+  age: "2-4",
+  category: "Rhymes",
+  audience: "Both",
+  description: "Educational video for kids."
+}</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <h3>🌈 Kids All-in-One Learning Hub</h3>
+    <p>Created by Sushma Neduganti | Educational YouTube video organizer</p>
+  </footer>
+
+  <script src="videos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
