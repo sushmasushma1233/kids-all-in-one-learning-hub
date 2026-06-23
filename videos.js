@@ -50,7 +50,7 @@ const videos = [
   {
     
     title: "Kids Learning Video",
-    youtubeId: "https://youtu.be/lI2wHDsnk0Q?si=ML-fYVCsDcX7MGyv",
+    youtubeId: "lI2wHDsnk0Q",
     age: "2-4",
     category: "Rhymes",
     audience: "Both",
