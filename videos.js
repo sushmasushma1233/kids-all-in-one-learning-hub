@@ -1,4 +1,4 @@
-const rhymesVideos = [
+const videos  = [
   {
     title: "Twinkle Twinkle Little Star",
     youtubeId: "yCjJyiqpAuU",
