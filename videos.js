@@ -47,6 +47,19 @@ const videos = [
     audience: "Both",
     description: "Informative science video for curious kids."
   }
+  {
+    
+    title: "Kids Learning Video",
+    youtubeId: "https://youtu.be/lI2wHDsnk0Q?si=ML-fYVCsDcX7MGyv",
+    age: "2-4",
+    category: "Rhymes",
+    audience: "Both",
+    description: "Educational video for kids."
+}
+  
+
+  
+}
 ];
 
 // Add more videos here.
